@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Job freak</title>
+
+  
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.text {
+    position: absolute;
+  top: 50px;
+  left: 20px;
+  text-align: center;
+  font-size: 90px;
+  color: antiquewhite;
+}
+.open {
+    color: rgb(248, 245, 245);
+    position: relative;
+    top: 4px;
+    
+    background-color: rgb(0, 0, 0);
+    
+}
+.img {
+  padding-top: 2px;
+}
+#About,
+        #Contact,
+        #Information,
+        #Guide {
+            height: 70vh;
+            text-align: center;
+            font-size: 20px;
+            padding-top: 50px;
+        
+        }
+  
+        #About{
+          border: 15px solid rgb(9, 9, 9);
+          border-radius: 25px;
+          background-color: #818181;
+          max-width: 100%;
+    margin-left: 20px;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(21rem,auto));
+    align-items: center;
+    gap: 1.5rem;
+    
+            
+            
+        }
+        .About-text span{
+    font-weight: 600;
+    text-transform: uppercase; 
+    color: var(--green-color);
+    text-align: center;
+    font-size: xx-large;
+    padding-left: 20px;
+        }
+
+        .About-text h5{
+    margin: 0.5rem 0 1rem;
+    
+        }
+        .About-text p{
+    margin: 0.5rem 0 1rem;
+    
+}
+
+        #Contact{
+          border: 15px solid rgb(9, 9, 9);
+          border-radius: 25px;
+          background-color: #818181;
+          max-width: 100%;
+    margin-left: 20px;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(21rem,auto));
+    align-items: center;
+    gap: 1.5rem;
+    
+            
+            
+        }
+        .Contact-text span{
+    font-weight: 600;
+    text-transform: uppercase; 
+    color: var(--green-color);
+    text-align: center;
+    font-size: xx-large;
+    padding-left: 20px;
+        }
+
+        .Contact-text h5{
+    margin: 0.5rem 0 1rem;
+    
+        }
+        .Contact-text p{
+    margin: 0.5rem 0 1rem;
+    
+}
+#Information{
+          border: 15px solid rgb(9, 9, 9);
+          border-radius: 25px;
+          background-color: #818181;
+          max-width: 100%;
+    margin-left: 20px;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(21rem,auto));
+    align-items: center;
+    gap: 1.5rem;
+    
+            
+            
+        }
+        .Information-text span{
+    font-weight: 600;
+    text-transform: uppercase; 
+    color: var(--green-color);
+    text-align: center;
+    font-size: xx-large;
+    padding-left: 20px;
+        }
+
+        .Information-text h5{
+    margin: 0.5rem 0 1rem;
+    
+        }
+        .Information-text p{
+    margin: 0.5rem 0 1rem;
+    
+}
+  
+#Guide{
+          border: 15px solid rgb(9, 9, 9);
+          border-radius: 25px;
+          background-color: #818181;
+          max-width: 100%;
+    margin-left: 20px;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(21rem,auto));
+    align-items: center;
+    gap: 1.5rem;
+    
+            
+            
+        }
+        .Guide-text span{
+    font-weight: 600;
+    text-transform: uppercase; 
+    color: var(--green-color);
+    text-align: center;
+    font-size: xx-large;
+    padding-left: 20px;
+        }
+
+        .Guide-text h5{
+    margin: 0.5rem 0 1rem;
+    
+        }
+        .Guide-text p{
+    margin: 0.5rem 0 1rem;
+    
+}
+  
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.afterimg{
+    max-width: 968px;
+    margin-left: 190px;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(21rem,auto));
+    align-items: center;
+    gap: 1.5rem;
+}
+.afterimg-text span{
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--green-color);
+    padding-left: 250px;
+}
+.afterimg-text p{
+    margin: 0.5rem 0 1rem;
+    padding-left: 180px;
+}
+
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#About">About</a>
+  <a href="#Contact">Contact</a>
+  <a href="#Information">Information</a>
+  <a href="#Guide">Guide</a>
+</div>
+
+<div id="main">
+    <div class="open"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Open</span>
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+        </script></div>
+    <div class=img><img src="Images/bitcoin.jpg" alt="" style="width: 100%;" ></div>
+    <div class="text"><h1 style="text-align: center;">CRYPTO CURRENCY</h1></div>
+   
+</div>
+
+<section class="afterimg" id="afterimg">
+  <img src="Images/pngwing.com.png" alt="">
+  <div class="afterimg-text">
+  <span>About Bitcoin</span>
+  <p>A cryptocurrency is a digital currency, which is an alternative form of payment created using encryption algorithms. The use of encryption technologies means that cryptocurrencies function both as a currency and as a virtual accounting system. To use cryptocurrencies, you need a cryptocurrency wallet. These wallets can be software that is a cloud-based service or is stored on your computer or on your mobile device. The wallets are the tool through which you store your encryption keys that confirm your identity and link to your cryptocurrency.</p>
+</div></section>
+  
+  
+</div>
+
+<section class="About" id="About">
+  <div class="about-image"><img src="Images/crypto.png" alt=""></div>
+  <div class="About-text">
+  <span>ABOUT</span>
+  <h5>Our mission is to create more economic freedom in the world</h5>
+  <p>We define economic freedom as the ability to make choices with respect to one’s personal resources, unencumbered by trusted third parties or borders or lack of access. We believe economic freedom is the foundation of peace and prosperity, and by creating more of it for people, we are reducing suffering in the world. Our mission is to help everyone, everywhere be more economically free.</p>
+</div></section>
+
+
+<section id="Contact" class="Contact">
+  <div class="Contact-image"><img src="Images/contact.png"></div>
+  <div class="Contact-text">
+    <span>CONTACT</span>
+    <h5>For more information</h5>
+    <p>Bitcoin.com is your premier source for everything Bitcoin related. We however are not the Bitcoin network itself, and cannot assist with questions unrelated to the Bitcoin.com suite of tools and services. If you need help with general Bitcoin network questions and issues, please visit our forum and ask questions there for a free and open discussion about Bitcoin with others in the Bitcoin community.
+
+      Before contacting Bitcoin.com, please confirm that you understand Bitcoin.com is not the official website for Bitcoin.Bitcoin.com provides a suite of tools and services on top of the Bitcoin network but Bitcoin.com is not Bitcoin itself. Bitcoin is not a company, just like how the internet is not a company.</p>
+   
+</div></section>
+
+<section id="Information" class="Information">
+  <div class="Information-image"><img src="Images/information.png" alt=""></div>
+  <div class="Information-text">
+    <span>INFORMATION</span>
+    <p>It’s important to understand there are three separate components to Bitcoin, all of which combine together to create a decentralized payment system:
+      The Bitcoin network
+      The native cryptocurrency of the Bitcoin network, called bitcoin (BTC)
+      The Bitcoin blockchain
+      Bitcoin runs on a peer-to-peer network where users — typically individuals or entities who want to exchange bitcoin with others on the network — do not require the help of intermediaries to execute and validate transactions. Users can choose to connect their computer directly to this network and download its public ledger in which all the historical bitcoin transactions are recorded.This public ledger uses a technology known as “blockchain,” also referred to as “distributed ledger technology.” Blockchain technology is what allows cryptocurrency transactions to be verified, stored and ordered in an immutable, transparent way. Immutability and transparency are vitally important credentials for a payment system that relies on zero trust.
+      Whenever new transactions are confirmed and added to the ledger, the network updates every user’s copy of the ledger to reflect the latest changes. Think of it as an open Google document that updates automatically when anyone with access edits its content.
+      As its name implies, the Bitcoin blockchain is a digital string of chronologically ordered “blocks” — chunks of code that contain bitcoin transaction data. However, it is important to mention that validating transactions and bitcoin mining are separate processes. Mining can still occur whether transactions are added to the blockchain or not. Likewise, an explosion in Bitcoin transactions does not necessarily increase the rate at which miners find new blocks.
+      Irrespective of the volume of transactions waiting to be confirmed, the Bitcoin is programmed to allow new blocks to be added to the blockchain approximately once every 10 minutes.</p>
+  </div>
+</section>
+<section id="Guide" class="Guide">
+  <div class="Guide-image"><img src="Images/guide.png" alt=""></div>
+  <div class="Guide-text">
+    <span>Guide</span>
+    <p><b>What are the risks?</b></p>
+    <p>There’s risk as well as a great opportunity with Bitcoin. While it has been appealing to criminals due to its anonymity and lack of regulation, there are lots of benefits to all of us if you’re willing to accept some risk to jump into the Bitcoin marketplace. Since there is no governing body, it can be difficult to resolve issues if Bitcoins get stolen or lost. In 2014 Mt. Gox went offline, and 850,000 Bitcoins were never recovered. Once a transaction hits the blockchain it’s final. Since Bitcoin is relatively new, there are still a lot of unknowns and its value is very volatile and can change significantly daily.
+
+      So, the jury’s still out if Bitcoin will accomplish what its proponents predict, the replacement of government-controlled, centralized money. I fully expect 2018 to give us even more insight about the future of Bitcoin as the technology continues to grow and mature.</p>
+  </div>
+</section>
+
+<script>
+window.onscroll = () => {
+  var current = "";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    if (pageYOffset >= sectionTop ) {
+      current = section.getAttribute("id"); }
+  });
+
+  navLi.forEach((li) => {
+    li.classList.remove("active");
+    if (li.classList.contains(current)) {
+      li.classList.add("active");
+    }
+  });
+};
+</script>
+
+  
+   
+</body>
+</html> 
+
